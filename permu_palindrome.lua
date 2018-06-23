@@ -1,7 +1,7 @@
 -- Given a string, write a function to check if it is a
 -- permutation of a palindrome
 
--- File name: palindromeOrNot.lua
+-- File name: permu_palindrome.lua
 -- Programmer: TWu
 
 -- dump key (k) and value (v) in table (tb)
