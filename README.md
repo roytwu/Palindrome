@@ -1,7 +1,7 @@
-# Interview questions associated with palindromes
+# Palindrome interview questions
 
 
-📝 Questions
+🤖 Questions
 ------------
 
 1. Given a string (word), write a function to check if it is a permutation of a palindrome  
