@@ -7,6 +7,24 @@
 #include <stdlib.h>
 #include <stdbool.h> //bool
 
+bool isPalindrome(char str[]);
+int numOfPalindrome(char str[]); 
+
+int main(){
+	//isPalindrome("noon");
+	// isPalindrome("power");
+
+	int num;
+	char strA[] = "Anna, the eagle eye, will leave at noon !";
+	num =numOfPalindrome(strA);
+	printf("Number of palindrome: %d\n", num);
+
+
+	return 0;
+}
+
+
+
 //Determine if a string/word is a palindrome
 bool isPalindrome(char str[])
 {
@@ -61,18 +79,6 @@ int numOfPalindrome(char str[])
 	return count;
 }
 
-int main(){
-	//isPalindrome("noon");
-	// isPalindrome("power");
-
-	int num;
-	char strA[] = "Anna, the eagle eye, will leave at noon !";
-	num =numOfPalindrome(strA);
-	printf("Number of palindrome: %d\n", num);
-
-
-	return 0;
-}
 
 // void strSplit(char str[]) 
 // {
