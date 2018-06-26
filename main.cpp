@@ -7,37 +7,29 @@
 
 #include <iostream>
 #include <string>
-#include <iterator>
 #include <vector>
+#include <iterator> //ostream_iterator
 
 using std::cout;
 using std::endl;
 using std::string;
 using std::vector;
-using std::ostream_iterator;
+//using std::ostream_iterator;
 
 
 void Tokenize(const string&, vector<string>&, const string&);
 bool isPalindrome(string word);
-//int numOfPalindrome(char str[]);
+int  numOfPalindrome(string sentence);
 
 
 int main(){
 
 	string strA = "Anna, the eagle eye, will leave at noon !";
-	vector<string> tokens;
-	Tokenize(strA, tokens, " ,.-~:!");
-	//copy(tokens.begin(), tokens.end(), ostream_iterator<string>(cout, ", "));
-
-	int count =0;
-	for (unsigned int i=0; i<tokens.size(); i++){
-		if( isPalindrome(tokens[i]) )
-			count++;
-	}
-	cout << "Number of palindrome: " << count << endl;
+	cout << "Number of palindrome: " << numOfPalindrome(strA) << endl;
 
 	return 0;
 }
+
 
 
 
@@ -88,9 +80,17 @@ bool isPalindrome(string word)
 }
 
 
-// int numOfPalindrome(char str[]) 
-// {
+int numOfPalindrome(string sentence) 
+{
+	vector<string> tokens;
+	Tokenize(sentence, tokens, " ,.-~:!");
+	//copy(tokens.begin(), tokens.end(), ostream_iterator<string>(cout, ", "));
 
-// }
+	int count =0;
+	for (unsigned int i=0; i<tokens.size(); i++){
+		if( isPalindrome(tokens[i]) )
+			count++;
+	}
 
-
+	return count;
+}
