@@ -1,3 +1,6 @@
+//File name: palindrome.h
+//Author: Roy T Wu
+
 #ifndef PALINDROME_H_
 #define PALINDROME_H_
 

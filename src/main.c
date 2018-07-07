@@ -2,21 +2,26 @@
 //Author: Roy T Wu
 //This is the driver program for palindrome.cpp
 
-//Goal: Given a sentence, tell how many palindromes in that sentence
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "palindrome.h"
 
 int main(){
-	//isPalindrome("noon");
-	//isPalindrome("power");
+	bool boo;
+	char str1[] = "Noon";
+	boo = isPalindrome(str1);
+	printf("-'Noon' %s a palindrome\n", boo ? "is" : "is NOT");
 
-	int num;
+	boo = isPalindrome("power");
+	printf("-'power' %s a palindrome\n", boo ? "is" : "is NOT");
+	printf("\n");
+
+
+	//count the number of palindromes in the sentence
 	char strA[] = "Anna, the eagle eye, will leave at noon !";
-	num =numOfPalindrome(strA);
-	printf("Number of palindrome: %d\n", num);
+	int num =numOfPalindrome(strA);
+	printf("\nNumber of palindrome: %d\n", num);
 
 
 	return 0;

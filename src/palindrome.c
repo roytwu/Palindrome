@@ -1,3 +1,6 @@
+//File name: palindrome.c
+//Author: Roy T Wu
+
 #include <stdio.h>
 #include <string.h>
 #include "palindrome.h"
@@ -18,6 +21,7 @@ bool isPalindrome(char str[])
 		}
 	}
 
+	
 	while(leftm < rightm)
 	{
 		if(str[leftm++] != str[rightm--]){
@@ -30,6 +34,9 @@ bool isPalindrome(char str[])
 }
 
 
+
+//Given a sentence, tell how many palindromes in that sentence
+//isPalindrome() is called in this function
 int numOfPalindrome(char str[]) 
 {
 	char *p_token;
