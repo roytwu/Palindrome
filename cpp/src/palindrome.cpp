@@ -1,36 +1,7 @@
-//File name: main.cpp
-//Author: Roy T Wu
-//Goal: Given a sentence, tell how many palindromes in that sentence
-
-//Tokenize: http://oopweb.com/CPP/Documents/CPPHOWTO/Volume/C++Programming-HOWTO-7.html
 
 
-#include <iostream>
-#include <string>
-#include <vector>
 #include <iterator> //ostream_iterator
-
-using std::cout;
-using std::endl;
-using std::string;
-using std::vector;
-//using std::ostream_iterator;
-
-
-void Tokenize(const string&, vector<string>&, const string&);
-bool isPalindrome(string word);
-int  numOfPalindrome(string sentence);
-
-
-int main(){
-
-	string strA = "Anna, the eagle eye, will leave at noon !";
-	cout << "Number of palindrome: " << numOfPalindrome(strA) << endl;
-
-	return 0;
-}
-
-
+#include "palindrome.h"
 
 
 void Tokenize(const string& str, vector<string>& tokens, const string& delimiters = " ")
@@ -80,6 +51,7 @@ bool isPalindrome(string word)
 }
 
 
+//Given a sentence, tell how many palindromes in that sentence
 int numOfPalindrome(string sentence) 
 {
 	vector<string> tokens;
