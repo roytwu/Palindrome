@@ -1,7 +1,7 @@
 //File name: longestPalinSubstr.h
 //Author: Roy T Wu
-
 //Given a string, find the longest substring which is palindrome
+
 #include <string.h> //memset
 #include <stdbool.h> //bool
 #include "longestPalinSubstr.h"

@@ -1,6 +1,7 @@
 //File name: main.c
+//driver program for palindrome.c and longestPalinSubstr.c
 //Author: Roy T Wu
-//This is the driver program for palindrome.c and longestPalinSubstr.c
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -14,7 +15,7 @@ int main(){
 	char sentence[] = "Anna, the eagle eye, will leave at noon!";
 	char str[] = "Fhannahiskaka";
 
-	// boo = isPalindrome("Noon"); //code will crash here
+	//boo = isPalindrome("Noon"); //code will crash here
 	boo = isPalindrome(word1);
 	printf("-'Noon' %s a palindrome\n", boo ? "is" : "is NOT");
 	

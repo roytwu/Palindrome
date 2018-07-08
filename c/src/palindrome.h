@@ -1,4 +1,4 @@
-//File name: palindrome.h
+//File name: palindrome.h, header ffile for palindrome.c
 //Author: Roy T Wu
 
 #ifndef PALINDROME_H_

@@ -2,7 +2,7 @@
 # programmer: Roy TWu
 
 # In order to make this work: 
-# source code (.cpp and .h) must be put in the 'src' folder
+# source code (.c and .h) must be put in the 'src' folder
 # make will put object files in 'obj folder' 
 
 SRC_DIR = src

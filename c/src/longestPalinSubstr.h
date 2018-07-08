@@ -1,4 +1,4 @@
-//File name: longestPalinSubstr.h
+//File name: longestPalinSubstr.h, header file for longestPalinSubstr.c
 //Author: Roy T Wu
 
 #ifndef LONGEST_PALIN_SUBSTR_H_
