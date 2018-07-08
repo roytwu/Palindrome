@@ -1,25 +1,12 @@
-//File name: longest_palin.c
+//File name: longestPalinSubstr.h
 //Author: Roy T Wu
-//Goal: given a string, find the longest substring which is palindrome
 
-#include <stdio.h>
+
+//Given a string, find the longest substring which is palindrome
 #include <string.h> //memset
-#include <stdlib.h>
+//#include <stdlib.h>
 #include <stdbool.h> //bool
-
-int findLonestPalin(char *str);
-
-
-int main(){
-	
-
-	char str[] = "hannahiskaka";
-	int rtn = findLonestPalin(str);
-	printf("%d\n", rtn);
-
-	return 0;
-}
-
+#include "longestPalinSubstr.h"
 
 int findLonestPalin(char *str){
 	int max_length = 1;
