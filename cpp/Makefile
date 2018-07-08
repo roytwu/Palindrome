@@ -18,7 +18,7 @@ TARGET_EXE = exe
 SOURCE = $(wildcard $(SRC_DIR)/*.cpp)
 INCLUDE = $(wildcard $(SRC_DIR)/*.h)
 
-OBJ = $(SOURCE:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
+OBJ = $(SOURCE:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
 #$(BIN_DIR)/$(EXE_NAME): $(OBJ) #uncomment if there is a bin directory
 $(TARGET_EXE): $(OBJ) 
