@@ -15,12 +15,11 @@ int main(){
 	char sentence[] = "Anna, the eagle eye, will leave at noon!";
 	char str[] = "Fhannahiskaka";
 
-	boo = isPalindrome("Noon"); //code will crash here
-	//boo = isPalindrome(word1);
+	boo = isPalindrome(word1); 
+	//boo = isPalindrome("Power"); //don't do this, code will crash 
 	printf("-'Noon' %s a palindrome\n", boo ? "is" : "is NOT");
 	
-	boo = isPalindrome("power");
-	//boo = isPalindrome(word2);
+	boo = isPalindrome(word2);
 	printf("-'power' %s a palindrome\n", boo ? "is" : "is NOT");
 	printf("\n");
 

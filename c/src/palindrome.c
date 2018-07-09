@@ -18,13 +18,11 @@ bool isPalindrome(char str[])
 	int rightm = strlen(str)-1; //right most of str
 
 	//if there is upper case in the string, turn it to lower case
-	// for(int i=0; i<strlen(str); i++){
-	// 	//if(str[i]>64 && str[i]<91){
-	// 		printf("in if loop, before: %d\n", str[i]);
-	// 		str[i]=str[i]+32; 
-	// 		printf("in if loop, after: %d\n", str[i]);
-	// 	//}
-	// }
+	for(int i=0; i<strlen(str); i++){
+		if(str[i]>64 && str[i]<91){
+			str[i]=str[i]+32; 
+		}
+	}
 
 	
 	while(leftm < rightm)
