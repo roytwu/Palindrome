@@ -16,9 +16,24 @@ using std::string;
 
 int main(){
 
-	string strA = "Anna, the eagle eye, will leave at noon !";
-	cout << "Number of palindrome: " << numOfPalindrome(strA) << endl;
+	string word1 = "Reviver";
+	string word2 = "nostalgia";
+	string sentence = "Anna, the eagle eye, will leave at noon !";
+	
+	bool boo = isPalindrome("Reviver");
+	string str = boo ? " is " : " is NOT "; //conditional operator
+	cout << word1 << str << "a palindrome" << endl;
+
+	boo = isPalindrome(word2);
+	str = boo ? " is " : " is NOT "; //conditional operator
+	cout << word2 << str << "a palindrome" << endl;
+
+
+	cout << "Number of palindrome: " << numOfPalindrome(sentence) << endl;
 
 	return 0;
 }
 
+
+/*Note*/
+//conditional operator works like this:  expression ? true_clause : false_clause
