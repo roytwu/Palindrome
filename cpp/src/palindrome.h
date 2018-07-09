@@ -15,3 +15,7 @@ int  numOfPalindrome(string sentence);
 
 
 #endif //PALINDROME_H_
+
+/*Note*/
+//When passing by value, a copy of the object being passed is made. 
+//When passing by reference, a reference to the existing object is made (there is no copy)

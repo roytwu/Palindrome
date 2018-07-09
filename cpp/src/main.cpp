@@ -24,9 +24,9 @@ int main(){
 	string str = boo ? " is " : " is NOT "; //conditional operator
 	cout << word1 << str << "a palindrome" << endl;
 
-	boo = isPalindrome(word2);
-	str = boo ? " is " : " is NOT "; //conditional operator
-	cout << word2 << str << "a palindrome" << endl;
+	bool boo2 = isPalindrome(word2);
+	string str2 = boo2 ? " is " : " is NOT "; //conditional operator
+	cout << word2 << str2 << "a palindrome" << endl;
 
 
 	cout << "Number of palindrome: " << numOfPalindrome(sentence) << endl;
